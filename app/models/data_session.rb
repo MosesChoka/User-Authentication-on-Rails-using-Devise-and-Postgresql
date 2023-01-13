@@ -1,0 +1,2 @@
+class DataSession < ApplicationRecord
+end

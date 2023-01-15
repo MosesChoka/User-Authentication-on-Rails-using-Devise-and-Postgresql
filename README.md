@@ -1,6 +1,6 @@
 # README
 
-This is a user autorization script using ruby on rails devise
+This is a user authentication script using ruby on rails devise
 
 Things you may want to cover:
 

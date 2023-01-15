@@ -1,10 +1,10 @@
-<%= form_with(model: data_session) do |form| %>
-  <% if data_session.errors.any? %>
+<%= form_with(model: post) do |form| %>
+  <% if post.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(data_session.errors.count, "error") %> prohibited this data_session from being saved:</h2>
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
       <ul>
-        <% data_session.errors.each do |error| %>
+        <% post.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -22,21 +22,11 @@
   </div>
 
   <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.text_area :image %>
-  </div>
-
-  <div>
     <%= form.label :body, style: "display: block" %>
     <%= form.text_area :body %>
   </div>
 
   <div>
-    <%= form.label :keywords, style: "display: block" %>
-    <%= form.text_area :keywords %>
-  </div>
-
-  <div>
-    <%= form.submit%> 
+    <%= form.submit %>
   </div>
 <% end %>

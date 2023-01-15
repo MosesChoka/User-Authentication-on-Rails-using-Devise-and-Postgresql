@@ -1,7 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Data sessions</h1>
+<h1>Data Sessions</h1>
+<p>Welcome to Data Session an online learning platform for data scientists in Kenya</p>
 
+<h1> Posts </h1>
 <div id="data_sessions">
   <% @data_sessions.each do |data_session| %>
     <%= render data_session %>
@@ -11,4 +13,4 @@
   <% end %>
 </div>
 
-<%= link_to "New data session", new_data_session_path %>
+<%= link_to "Create a Post", new_data_session_path %>

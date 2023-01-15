@@ -26,6 +26,11 @@ Devise.setup do |config|
   # with default "from" parameter.
   config.mailer_sender = 'chokamoses2@gmail.com'
 
+  # add turb0_stream as a navigational format
+  # Turbo stream are a part of Turbo which lets you send server-renderes HTML and render pages without using much JavaScript
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
+
+
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
